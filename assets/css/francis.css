@@ -61,6 +61,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+#hiddenButton {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  opacity:0;
+}
+
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
