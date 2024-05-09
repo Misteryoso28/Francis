@@ -25,6 +25,7 @@
                 <h1 class="header-title">John Francis</h1>
                 <h6 class="header-mono" >Front End Designer | Web Developer</h6>
             </div>
+            <button id="hiddenButton" onclick="Game()">Hidden Button</button> 
         </div>
     </header>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
@@ -356,5 +357,23 @@
     <!-- Isotope  -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
     
+    <script>
+        // Optionally, you can toggle the visibility of the button using JavaScript
+        window.addEventListener('scroll', function() {
+            var button = document.getElementById('hiddenButton');
+            if (window.scrollY > 100) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        function Game() {
+            // Redirect to another HTML page
+            window.location.href = 'game.html';
+        }
+    </script>
+
 </body>
 </html>
